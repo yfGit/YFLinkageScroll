@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79170D2C1CBCC24200334219 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79170D2B1CBCC24100334219 /* CustomViewController.m */; };
+		7918A8B51CC5C78D00229A25 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8B41CC5C78D00229A25 /* BasicViewController.m */; };
+		793F51351CA4DF7B00045B69 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51341CA4DF7B00045B69 /* OneViewController.m */; };
+		793F51381CA4DF8100045B69 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51371CA4DF8100045B69 /* TwoViewController.m */; };
+		793F513B1CA4DF8600045B69 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F513A1CA4DF8600045B69 /* ThreeViewController.m */; };
+		793F513E1CA4DF8A00045B69 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F513D1CA4DF8A00045B69 /* FourViewController.m */; };
+		793F51411CA4DF8F00045B69 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51401CA4DF8F00045B69 /* FiveViewController.m */; };
+		793F51441CA50DD000045B69 /* UIColor+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51431CA50DD000045B69 /* UIColor+GetColor.m */; };
+		794513621CA28F2A008C5946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513611CA28F2A008C5946 /* main.m */; };
+		794513651CA28F2A008C5946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513641CA28F2A008C5946 /* AppDelegate.m */; };
+		794513681CA28F2A008C5946 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513671CA28F2A008C5946 /* ViewController.m */; };
+		7945136B1CA28F2A008C5946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794513691CA28F2A008C5946 /* Main.storyboard */; };
+		7945136D1CA28F2A008C5946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7945136C1CA28F2A008C5946 /* Assets.xcassets */; };
+		794513701CA28F2A008C5946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7945136E1CA28F2A008C5946 /* LaunchScreen.storyboard */; };
+		794513C01CA2A0D0008C5946 /* YFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513BF1CA2A0D0008C5946 /* YFSliderView.m */; };
+		79466C871CBE451A003E043E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79466C861CBE451A003E043E /* icon.png */; };
+		798723EA1CA53DE000A43D03 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798723E91CA53DE000A43D03 /* SixViewController.m */; };
+		798723ED1CA53DE800A43D03 /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798723EC1CA53DE800A43D03 /* SevenViewController.m */; };
+		79D476361CB73C0500116DBF /* YFLinkageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D476351CB73C0500116DBF /* YFLinkageScrollView.m */; };
+		79D476391CB73CE500116DBF /* YFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D476381CB73CE500116DBF /* YFViewController.m */; };
+		79F789811CA3810900C97C09 /* YFTagScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F789801CA3810900C97C09 /* YFTagScroll.m */; };
+		79F789871CA3E94600C97C09 /* YFContentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F789861CA3E94600C97C09 /* YFContentScroll.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79170D2A1CBCC24100334219 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		79170D2B1CBCC24100334219 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		7918A8B31CC5C78D00229A25 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		7918A8B41CC5C78D00229A25 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		793F51331CA4DF7B00045B69 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		793F51341CA4DF7B00045B69 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		793F51361CA4DF8100045B69 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		793F51371CA4DF8100045B69 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		793F51391CA4DF8600045B69 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		793F513A1CA4DF8600045B69 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		793F513C1CA4DF8A00045B69 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		793F513D1CA4DF8A00045B69 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		793F513F1CA4DF8F00045B69 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		793F51401CA4DF8F00045B69 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		793F51421CA50DD000045B69 /* UIColor+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetColor.h"; sourceTree = "<group>"; };
+		793F51431CA50DD000045B69 /* UIColor+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetColor.m"; sourceTree = "<group>"; };
+		7945135D1CA28F2A008C5946 /* YFLinkageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLinkageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794513611CA28F2A008C5946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		794513631CA28F2A008C5946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		794513641CA28F2A008C5946 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		794513661CA28F2A008C5946 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		794513671CA28F2A008C5946 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7945136A1CA28F2A008C5946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7945136C1CA28F2A008C5946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7945136F1CA28F2A008C5946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		794513711CA28F2A008C5946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794513BE1CA2A0D0008C5946 /* YFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSliderView.h; sourceTree = "<group>"; };
+		794513BF1CA2A0D0008C5946 /* YFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSliderView.m; sourceTree = "<group>"; };
+		79466C861CBE451A003E043E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		798723E81CA53DE000A43D03 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
+		798723E91CA53DE000A43D03 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
+		798723EB1CA53DE800A43D03 /* SevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
+		798723EC1CA53DE800A43D03 /* SevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
+		79D476341CB73C0500116DBF /* YFLinkageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLinkageScrollView.h; sourceTree = "<group>"; };
+		79D476351CB73C0500116DBF /* YFLinkageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLinkageScrollView.m; sourceTree = "<group>"; };
+		79D476371CB73CE500116DBF /* YFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewController.h; sourceTree = "<group>"; };
+		79D476381CB73CE500116DBF /* YFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewController.m; sourceTree = "<group>"; };
+		79F7897F1CA3810900C97C09 /* YFTagScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTagScroll.h; sourceTree = "<group>"; };
+		79F789801CA3810900C97C09 /* YFTagScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTagScroll.m; sourceTree = "<group>"; };
+		79F789851CA3E94600C97C09 /* YFContentScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFContentScroll.h; sourceTree = "<group>"; };
+		79F789861CA3E94600C97C09 /* YFContentScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFContentScroll.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7945135A1CA28F2A008C5946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		793F51321CA4DF6200045B69 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				7918A8B31CC5C78D00229A25 /* BasicViewController.h */,
+				7918A8B41CC5C78D00229A25 /* BasicViewController.m */,
+				793F51331CA4DF7B00045B69 /* OneViewController.h */,
+				793F51341CA4DF7B00045B69 /* OneViewController.m */,
+				793F51361CA4DF8100045B69 /* TwoViewController.h */,
+				793F51371CA4DF8100045B69 /* TwoViewController.m */,
+				793F51391CA4DF8600045B69 /* ThreeViewController.h */,
+				793F513A1CA4DF8600045B69 /* ThreeViewController.m */,
+				793F513C1CA4DF8A00045B69 /* FourViewController.h */,
+				793F513D1CA4DF8A00045B69 /* FourViewController.m */,
+				793F513F1CA4DF8F00045B69 /* FiveViewController.h */,
+				793F51401CA4DF8F00045B69 /* FiveViewController.m */,
+				798723E81CA53DE000A43D03 /* SixViewController.h */,
+				798723E91CA53DE000A43D03 /* SixViewController.m */,
+				798723EB1CA53DE800A43D03 /* SevenViewController.h */,
+				798723EC1CA53DE800A43D03 /* SevenViewController.m */,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		794513541CA28F2A008C5946 = {
+			isa = PBXGroup;
+			children = (
+				7945135F1CA28F2A008C5946 /* YFLinkageScrollView */,
+				7945135E1CA28F2A008C5946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7945135E1CA28F2A008C5946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7945135D1CA28F2A008C5946 /* YFLinkageScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7945135F1CA28F2A008C5946 /* YFLinkageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				79466C861CBE451A003E043E /* icon.png */,
+				793F51321CA4DF6200045B69 /* vc */,
+				794513B71CA29D4C008C5946 /* YFVIew */,
+				794513631CA28F2A008C5946 /* AppDelegate.h */,
+				794513641CA28F2A008C5946 /* AppDelegate.m */,
+				794513661CA28F2A008C5946 /* ViewController.h */,
+				794513671CA28F2A008C5946 /* ViewController.m */,
+				79D476371CB73CE500116DBF /* YFViewController.h */,
+				79D476381CB73CE500116DBF /* YFViewController.m */,
+				79170D2A1CBCC24100334219 /* CustomViewController.h */,
+				79170D2B1CBCC24100334219 /* CustomViewController.m */,
+				794513691CA28F2A008C5946 /* Main.storyboard */,
+				7945136C1CA28F2A008C5946 /* Assets.xcassets */,
+				7945136E1CA28F2A008C5946 /* LaunchScreen.storyboard */,
+				794513711CA28F2A008C5946 /* Info.plist */,
+				794513601CA28F2A008C5946 /* Supporting Files */,
+			);
+			path = YFLinkageScrollView;
+			sourceTree = "<group>";
+		};
+		794513601CA28F2A008C5946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794513611CA28F2A008C5946 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		794513B71CA29D4C008C5946 /* YFVIew */ = {
+			isa = PBXGroup;
+			children = (
+				79D476341CB73C0500116DBF /* YFLinkageScrollView.h */,
+				79D476351CB73C0500116DBF /* YFLinkageScrollView.m */,
+				79F7897F1CA3810900C97C09 /* YFTagScroll.h */,
+				79F789801CA3810900C97C09 /* YFTagScroll.m */,
+				794513BE1CA2A0D0008C5946 /* YFSliderView.h */,
+				794513BF1CA2A0D0008C5946 /* YFSliderView.m */,
+				79F789851CA3E94600C97C09 /* YFContentScroll.h */,
+				79F789861CA3E94600C97C09 /* YFContentScroll.m */,
+				793F51421CA50DD000045B69 /* UIColor+GetColor.h */,
+				793F51431CA50DD000045B69 /* UIColor+GetColor.m */,
+			);
+			name = YFVIew;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7945135C1CA28F2A008C5946 /* YFLinkageScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794513741CA28F2A008C5946 /* Build configuration list for PBXNativeTarget "YFLinkageScrollView" */;
+			buildPhases = (
+				794513591CA28F2A008C5946 /* Sources */,
+				7945135A1CA28F2A008C5946 /* Frameworks */,
+				7945135B1CA28F2A008C5946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YFLinkageScrollView;
+			productName = YFLinkageScrollView;
+			productReference = 7945135D1CA28F2A008C5946 /* YFLinkageScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794513551CA28F2A008C5946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "许毓方";
+				TargetAttributes = {
+					7945135C1CA28F2A008C5946 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 48LTUYWZYX;
+					};
+				};
+			};
+			buildConfigurationList = 794513581CA28F2A008C5946 /* Build configuration list for PBXProject "YFLinkageScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794513541CA28F2A008C5946;
+			productRefGroup = 7945135E1CA28F2A008C5946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7945135C1CA28F2A008C5946 /* YFLinkageScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7945135B1CA28F2A008C5946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79466C871CBE451A003E043E /* icon.png in Resources */,
+				794513701CA28F2A008C5946 /* LaunchScreen.storyboard in Resources */,
+				7945136D1CA28F2A008C5946 /* Assets.xcassets in Resources */,
+				7945136B1CA28F2A008C5946 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794513591CA28F2A008C5946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794513681CA28F2A008C5946 /* ViewController.m in Sources */,
+				79F789871CA3E94600C97C09 /* YFContentScroll.m in Sources */,
+				793F513B1CA4DF8600045B69 /* ThreeViewController.m in Sources */,
+				798723ED1CA53DE800A43D03 /* SevenViewController.m in Sources */,
+				793F51381CA4DF8100045B69 /* TwoViewController.m in Sources */,
+				79F789811CA3810900C97C09 /* YFTagScroll.m in Sources */,
+				794513651CA28F2A008C5946 /* AppDelegate.m in Sources */,
+				793F513E1CA4DF8A00045B69 /* FourViewController.m in Sources */,
+				798723EA1CA53DE000A43D03 /* SixViewController.m in Sources */,
+				794513C01CA2A0D0008C5946 /* YFSliderView.m in Sources */,
+				79170D2C1CBCC24200334219 /* CustomViewController.m in Sources */,
+				793F51441CA50DD000045B69 /* UIColor+GetColor.m in Sources */,
+				79D476361CB73C0500116DBF /* YFLinkageScrollView.m in Sources */,
+				793F51411CA4DF8F00045B69 /* FiveViewController.m in Sources */,
+				794513621CA28F2A008C5946 /* main.m in Sources */,
+				793F51351CA4DF7B00045B69 /* OneViewController.m in Sources */,
+				79D476391CB73CE500116DBF /* YFViewController.m in Sources */,
+				7918A8B51CC5C78D00229A25 /* BasicViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		794513691CA28F2A008C5946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7945136A1CA28F2A008C5946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7945136E1CA28F2A008C5946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7945136F1CA28F2A008C5946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794513721CA28F2A008C5946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		794513731CA28F2A008C5946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794513751CA28F2A008C5946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YFLinkageScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianbi.YFLinkageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		794513761CA28F2A008C5946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YFLinkageScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianbi.YFLinkageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794513581CA28F2A008C5946 /* Build configuration list for PBXProject "YFLinkageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794513721CA28F2A008C5946 /* Debug */,
+				794513731CA28F2A008C5946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794513741CA28F2A008C5946 /* Build configuration list for PBXNativeTarget "YFLinkageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794513751CA28F2A008C5946 /* Debug */,
+				794513761CA28F2A008C5946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794513551CA28F2A008C5946 /* Project object */;
+}
