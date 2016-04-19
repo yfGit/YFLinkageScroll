@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YFLinkageScroll"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "UIScrollView联动缩放颜色渐变"
   s.license 	 = "MIT"
   s.homepage	 = "https://github.com/yfGit"
