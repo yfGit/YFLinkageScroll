@@ -8,46 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		79170D2C1CBCC24200334219 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79170D2B1CBCC24100334219 /* CustomViewController.m */; };
-		7918A8B51CC5C78D00229A25 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8B41CC5C78D00229A25 /* BasicViewController.m */; };
-		793F51351CA4DF7B00045B69 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51341CA4DF7B00045B69 /* OneViewController.m */; };
-		793F51381CA4DF8100045B69 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51371CA4DF8100045B69 /* TwoViewController.m */; };
-		793F513B1CA4DF8600045B69 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F513A1CA4DF8600045B69 /* ThreeViewController.m */; };
-		793F513E1CA4DF8A00045B69 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F513D1CA4DF8A00045B69 /* FourViewController.m */; };
-		793F51411CA4DF8F00045B69 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51401CA4DF8F00045B69 /* FiveViewController.m */; };
-		793F51441CA50DD000045B69 /* UIColor+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 793F51431CA50DD000045B69 /* UIColor+GetColor.m */; };
+		7918A8D61CC62A0100229A25 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8BC1CC62A0100229A25 /* BasicViewController.m */; };
+		7918A8D71CC62A0100229A25 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8BE1CC62A0100229A25 /* FiveViewController.m */; };
+		7918A8D81CC62A0100229A25 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8C01CC62A0100229A25 /* FourViewController.m */; };
+		7918A8D91CC62A0100229A25 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8C21CC62A0100229A25 /* OneViewController.m */; };
+		7918A8DA1CC62A0100229A25 /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8C41CC62A0100229A25 /* SevenViewController.m */; };
+		7918A8DB1CC62A0100229A25 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8C61CC62A0100229A25 /* SixViewController.m */; };
+		7918A8DC1CC62A0100229A25 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8C81CC62A0100229A25 /* ThreeViewController.m */; };
+		7918A8DD1CC62A0100229A25 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8CA1CC62A0100229A25 /* TwoViewController.m */; };
+		7918A8DE1CC62A0100229A25 /* UIColor+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8CD1CC62A0100229A25 /* UIColor+GetColor.m */; };
+		7918A8DF1CC62A0100229A25 /* YFContentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8CF1CC62A0100229A25 /* YFContentScroll.m */; };
+		7918A8E01CC62A0100229A25 /* YFLinkageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8D11CC62A0100229A25 /* YFLinkageScrollView.m */; };
+		7918A8E11CC62A0100229A25 /* YFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8D31CC62A0100229A25 /* YFSliderView.m */; };
+		7918A8E21CC62A0100229A25 /* YFTagScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918A8D51CC62A0100229A25 /* YFTagScroll.m */; };
 		794513621CA28F2A008C5946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513611CA28F2A008C5946 /* main.m */; };
 		794513651CA28F2A008C5946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513641CA28F2A008C5946 /* AppDelegate.m */; };
 		794513681CA28F2A008C5946 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513671CA28F2A008C5946 /* ViewController.m */; };
 		7945136B1CA28F2A008C5946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794513691CA28F2A008C5946 /* Main.storyboard */; };
 		7945136D1CA28F2A008C5946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7945136C1CA28F2A008C5946 /* Assets.xcassets */; };
 		794513701CA28F2A008C5946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7945136E1CA28F2A008C5946 /* LaunchScreen.storyboard */; };
-		794513C01CA2A0D0008C5946 /* YFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794513BF1CA2A0D0008C5946 /* YFSliderView.m */; };
 		79466C871CBE451A003E043E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79466C861CBE451A003E043E /* icon.png */; };
-		798723EA1CA53DE000A43D03 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798723E91CA53DE000A43D03 /* SixViewController.m */; };
-		798723ED1CA53DE800A43D03 /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798723EC1CA53DE800A43D03 /* SevenViewController.m */; };
-		79D476361CB73C0500116DBF /* YFLinkageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D476351CB73C0500116DBF /* YFLinkageScrollView.m */; };
 		79D476391CB73CE500116DBF /* YFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D476381CB73CE500116DBF /* YFViewController.m */; };
-		79F789811CA3810900C97C09 /* YFTagScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F789801CA3810900C97C09 /* YFTagScroll.m */; };
-		79F789871CA3E94600C97C09 /* YFContentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F789861CA3E94600C97C09 /* YFContentScroll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79170D2A1CBCC24100334219 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		79170D2B1CBCC24100334219 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
-		7918A8B31CC5C78D00229A25 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
-		7918A8B41CC5C78D00229A25 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
-		793F51331CA4DF7B00045B69 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
-		793F51341CA4DF7B00045B69 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
-		793F51361CA4DF8100045B69 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
-		793F51371CA4DF8100045B69 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
-		793F51391CA4DF8600045B69 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
-		793F513A1CA4DF8600045B69 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
-		793F513C1CA4DF8A00045B69 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
-		793F513D1CA4DF8A00045B69 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
-		793F513F1CA4DF8F00045B69 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
-		793F51401CA4DF8F00045B69 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
-		793F51421CA50DD000045B69 /* UIColor+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetColor.h"; sourceTree = "<group>"; };
-		793F51431CA50DD000045B69 /* UIColor+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetColor.m"; sourceTree = "<group>"; };
+		7918A8BB1CC62A0100229A25 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		7918A8BC1CC62A0100229A25 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		7918A8BD1CC62A0100229A25 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		7918A8BE1CC62A0100229A25 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		7918A8BF1CC62A0100229A25 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		7918A8C01CC62A0100229A25 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		7918A8C11CC62A0100229A25 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		7918A8C21CC62A0100229A25 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		7918A8C31CC62A0100229A25 /* SevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
+		7918A8C41CC62A0100229A25 /* SevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
+		7918A8C51CC62A0100229A25 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
+		7918A8C61CC62A0100229A25 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
+		7918A8C71CC62A0100229A25 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		7918A8C81CC62A0100229A25 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		7918A8C91CC62A0100229A25 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		7918A8CA1CC62A0100229A25 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		7918A8CC1CC62A0100229A25 /* UIColor+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GetColor.h"; sourceTree = "<group>"; };
+		7918A8CD1CC62A0100229A25 /* UIColor+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GetColor.m"; sourceTree = "<group>"; };
+		7918A8CE1CC62A0100229A25 /* YFContentScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFContentScroll.h; sourceTree = "<group>"; };
+		7918A8CF1CC62A0100229A25 /* YFContentScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFContentScroll.m; sourceTree = "<group>"; };
+		7918A8D01CC62A0100229A25 /* YFLinkageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLinkageScrollView.h; sourceTree = "<group>"; };
+		7918A8D11CC62A0100229A25 /* YFLinkageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLinkageScrollView.m; sourceTree = "<group>"; };
+		7918A8D21CC62A0100229A25 /* YFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSliderView.h; sourceTree = "<group>"; };
+		7918A8D31CC62A0100229A25 /* YFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSliderView.m; sourceTree = "<group>"; };
+		7918A8D41CC62A0100229A25 /* YFTagScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTagScroll.h; sourceTree = "<group>"; };
+		7918A8D51CC62A0100229A25 /* YFTagScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTagScroll.m; sourceTree = "<group>"; };
 		7945135D1CA28F2A008C5946 /* YFLinkageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLinkageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794513611CA28F2A008C5946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		794513631CA28F2A008C5946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,21 +70,9 @@
 		7945136C1CA28F2A008C5946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7945136F1CA28F2A008C5946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794513711CA28F2A008C5946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		794513BE1CA2A0D0008C5946 /* YFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSliderView.h; sourceTree = "<group>"; };
-		794513BF1CA2A0D0008C5946 /* YFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSliderView.m; sourceTree = "<group>"; };
 		79466C861CBE451A003E043E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		798723E81CA53DE000A43D03 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
-		798723E91CA53DE000A43D03 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
-		798723EB1CA53DE800A43D03 /* SevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
-		798723EC1CA53DE800A43D03 /* SevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
-		79D476341CB73C0500116DBF /* YFLinkageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLinkageScrollView.h; sourceTree = "<group>"; };
-		79D476351CB73C0500116DBF /* YFLinkageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLinkageScrollView.m; sourceTree = "<group>"; };
 		79D476371CB73CE500116DBF /* YFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewController.h; sourceTree = "<group>"; };
 		79D476381CB73CE500116DBF /* YFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewController.m; sourceTree = "<group>"; };
-		79F7897F1CA3810900C97C09 /* YFTagScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFTagScroll.h; sourceTree = "<group>"; };
-		79F789801CA3810900C97C09 /* YFTagScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFTagScroll.m; sourceTree = "<group>"; };
-		79F789851CA3E94600C97C09 /* YFContentScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFContentScroll.h; sourceTree = "<group>"; };
-		79F789861CA3E94600C97C09 /* YFContentScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFContentScroll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,27 +86,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		793F51321CA4DF6200045B69 /* vc */ = {
+		7918A8BA1CC62A0100229A25 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				7918A8B31CC5C78D00229A25 /* BasicViewController.h */,
-				7918A8B41CC5C78D00229A25 /* BasicViewController.m */,
-				793F51331CA4DF7B00045B69 /* OneViewController.h */,
-				793F51341CA4DF7B00045B69 /* OneViewController.m */,
-				793F51361CA4DF8100045B69 /* TwoViewController.h */,
-				793F51371CA4DF8100045B69 /* TwoViewController.m */,
-				793F51391CA4DF8600045B69 /* ThreeViewController.h */,
-				793F513A1CA4DF8600045B69 /* ThreeViewController.m */,
-				793F513C1CA4DF8A00045B69 /* FourViewController.h */,
-				793F513D1CA4DF8A00045B69 /* FourViewController.m */,
-				793F513F1CA4DF8F00045B69 /* FiveViewController.h */,
-				793F51401CA4DF8F00045B69 /* FiveViewController.m */,
-				798723E81CA53DE000A43D03 /* SixViewController.h */,
-				798723E91CA53DE000A43D03 /* SixViewController.m */,
-				798723EB1CA53DE800A43D03 /* SevenViewController.h */,
-				798723EC1CA53DE800A43D03 /* SevenViewController.m */,
+				7918A8BB1CC62A0100229A25 /* BasicViewController.h */,
+				7918A8BC1CC62A0100229A25 /* BasicViewController.m */,
+				7918A8BD1CC62A0100229A25 /* FiveViewController.h */,
+				7918A8BE1CC62A0100229A25 /* FiveViewController.m */,
+				7918A8BF1CC62A0100229A25 /* FourViewController.h */,
+				7918A8C01CC62A0100229A25 /* FourViewController.m */,
+				7918A8C11CC62A0100229A25 /* OneViewController.h */,
+				7918A8C21CC62A0100229A25 /* OneViewController.m */,
+				7918A8C31CC62A0100229A25 /* SevenViewController.h */,
+				7918A8C41CC62A0100229A25 /* SevenViewController.m */,
+				7918A8C51CC62A0100229A25 /* SixViewController.h */,
+				7918A8C61CC62A0100229A25 /* SixViewController.m */,
+				7918A8C71CC62A0100229A25 /* ThreeViewController.h */,
+				7918A8C81CC62A0100229A25 /* ThreeViewController.m */,
+				7918A8C91CC62A0100229A25 /* TwoViewController.h */,
+				7918A8CA1CC62A0100229A25 /* TwoViewController.m */,
 			);
-			name = vc;
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7918A8CB1CC62A0100229A25 /* YFView */ = {
+			isa = PBXGroup;
+			children = (
+				7918A8CC1CC62A0100229A25 /* UIColor+GetColor.h */,
+				7918A8CD1CC62A0100229A25 /* UIColor+GetColor.m */,
+				7918A8CE1CC62A0100229A25 /* YFContentScroll.h */,
+				7918A8CF1CC62A0100229A25 /* YFContentScroll.m */,
+				7918A8D01CC62A0100229A25 /* YFLinkageScrollView.h */,
+				7918A8D11CC62A0100229A25 /* YFLinkageScrollView.m */,
+				7918A8D21CC62A0100229A25 /* YFSliderView.h */,
+				7918A8D31CC62A0100229A25 /* YFSliderView.m */,
+				7918A8D41CC62A0100229A25 /* YFTagScroll.h */,
+				7918A8D51CC62A0100229A25 /* YFTagScroll.m */,
+			);
+			path = YFView;
 			sourceTree = "<group>";
 		};
 		794513541CA28F2A008C5946 = {
@@ -128,9 +145,9 @@
 		7945135F1CA28F2A008C5946 /* YFLinkageScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				7918A8BA1CC62A0100229A25 /* VC */,
+				7918A8CB1CC62A0100229A25 /* YFView */,
 				79466C861CBE451A003E043E /* icon.png */,
-				793F51321CA4DF6200045B69 /* vc */,
-				794513B71CA29D4C008C5946 /* YFVIew */,
 				794513631CA28F2A008C5946 /* AppDelegate.h */,
 				794513641CA28F2A008C5946 /* AppDelegate.m */,
 				794513661CA28F2A008C5946 /* ViewController.h */,
@@ -154,23 +171,6 @@
 				794513611CA28F2A008C5946 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		794513B71CA29D4C008C5946 /* YFVIew */ = {
-			isa = PBXGroup;
-			children = (
-				79D476341CB73C0500116DBF /* YFLinkageScrollView.h */,
-				79D476351CB73C0500116DBF /* YFLinkageScrollView.m */,
-				79F7897F1CA3810900C97C09 /* YFTagScroll.h */,
-				79F789801CA3810900C97C09 /* YFTagScroll.m */,
-				794513BE1CA2A0D0008C5946 /* YFSliderView.h */,
-				794513BF1CA2A0D0008C5946 /* YFSliderView.m */,
-				79F789851CA3E94600C97C09 /* YFContentScroll.h */,
-				79F789861CA3E94600C97C09 /* YFContentScroll.m */,
-				793F51421CA50DD000045B69 /* UIColor+GetColor.h */,
-				793F51431CA50DD000045B69 /* UIColor+GetColor.m */,
-			);
-			name = YFVIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,24 +245,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918A8DD1CC62A0100229A25 /* TwoViewController.m in Sources */,
 				794513681CA28F2A008C5946 /* ViewController.m in Sources */,
-				79F789871CA3E94600C97C09 /* YFContentScroll.m in Sources */,
-				793F513B1CA4DF8600045B69 /* ThreeViewController.m in Sources */,
-				798723ED1CA53DE800A43D03 /* SevenViewController.m in Sources */,
-				793F51381CA4DF8100045B69 /* TwoViewController.m in Sources */,
-				79F789811CA3810900C97C09 /* YFTagScroll.m in Sources */,
+				7918A8DE1CC62A0100229A25 /* UIColor+GetColor.m in Sources */,
 				794513651CA28F2A008C5946 /* AppDelegate.m in Sources */,
-				793F513E1CA4DF8A00045B69 /* FourViewController.m in Sources */,
-				798723EA1CA53DE000A43D03 /* SixViewController.m in Sources */,
-				794513C01CA2A0D0008C5946 /* YFSliderView.m in Sources */,
+				7918A8E01CC62A0100229A25 /* YFLinkageScrollView.m in Sources */,
+				7918A8D81CC62A0100229A25 /* FourViewController.m in Sources */,
+				7918A8DC1CC62A0100229A25 /* ThreeViewController.m in Sources */,
+				7918A8D91CC62A0100229A25 /* OneViewController.m in Sources */,
 				79170D2C1CBCC24200334219 /* CustomViewController.m in Sources */,
-				793F51441CA50DD000045B69 /* UIColor+GetColor.m in Sources */,
-				79D476361CB73C0500116DBF /* YFLinkageScrollView.m in Sources */,
-				793F51411CA4DF8F00045B69 /* FiveViewController.m in Sources */,
 				794513621CA28F2A008C5946 /* main.m in Sources */,
-				793F51351CA4DF7B00045B69 /* OneViewController.m in Sources */,
+				7918A8E21CC62A0100229A25 /* YFTagScroll.m in Sources */,
+				7918A8DA1CC62A0100229A25 /* SevenViewController.m in Sources */,
 				79D476391CB73CE500116DBF /* YFViewController.m in Sources */,
-				7918A8B51CC5C78D00229A25 /* BasicViewController.m in Sources */,
+				7918A8DB1CC62A0100229A25 /* SixViewController.m in Sources */,
+				7918A8E11CC62A0100229A25 /* YFSliderView.m in Sources */,
+				7918A8D61CC62A0100229A25 /* BasicViewController.m in Sources */,
+				7918A8D71CC62A0100229A25 /* FiveViewController.m in Sources */,
+				7918A8DF1CC62A0100229A25 /* YFContentScroll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
