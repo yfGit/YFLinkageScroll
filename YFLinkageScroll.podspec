@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license 	 = "MIT"
   s.homepage	 = "https://github.com/yfGit"
   s.source	 = { :git => "https://github.com/yfGit/YFLinkageScroll", :tag => "1.0.0" }
-  s.source_files  = "YFLinkageScrollView/YFLinkageScrollView/YFView/*”
+  s.source_files  = "YFLinkageScrollView/YFLinkageScrollView/YFView/*"
   s.framework     = 'Foundation', 'UIKit'
   s.platform      = :ios, '7.0'
   s.description   = <<-DESC 
