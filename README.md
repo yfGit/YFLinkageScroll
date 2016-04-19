@@ -5,38 +5,48 @@
 
 多 UIScrollView 联动
 
-###效果:
-
 <p align="left" >
-  <img src="ver.gif" alt="KYAnimatedPageControl" title="KYAnimatedPageControl" width = "280">
   <img src="style.gif" alt="KYAnimatedPageControl" title="KYAnimatedPageControl" width = "280">
 </p>
+
+
+
+##Introduction
+1. 按钮(颜色,大小缩放)
+2. 滑块类型: 自定义颜色高,宽度跟btn.titile宽度+参数
+3. 内容(UIViewcontroller, UIView) 
+4. 旋转, 横屏标签名字默认为竖屏的2倍或最大数
+5. CURD 增删改查功能,加对比看网易新闻增加的
+<p align="left" >
+<img src="ver.gif" alt="KYAnimatedPageControl" title="KYAnimatedPageControl" width = "280">
 <img src="hor.gif" alt="KYAnimatedPageControl" title="KYAnimatedPageControl" width = "400">
+</p>
 
-
-###下面是实现的效果: 全可自定义
-1. 按钮(颜色,大小缩放)<p></p>
+##Usage
+**Xib加载 或代码 alloc.init 后**
+**配置方法,属性或block, 事件代理(左右滑出界,停止滚动时的当前页)**
+/**
+ *  初始化
+ *  缩放1.2  
+ *  slider按tagArr的title字符宽度
+ */
+- (void)configWithScrolltagArray:(NSArray *)tagArr
+                    visibleCount:(float)visibleCount
+                      sliderType:(YFSliderType)type
+               contentScrollItem:(NSArray *)contentArr;
+               
+/**
+ *  自定义初始化
+ */
+- (void)configWithScrolltagArray:(NSArray *)tagArr
+              tagScrollEdgeInset:(UIEdgeInsets)tagEdge
+                        tagScale:(CGFloat)tagScale
+              configTagItemBlock:(YFTagItemConfigration)block
+                    visibleCount:(float)visibleCount
+                      sliderType:(YFSliderType)type
+                    customSlider:(UIView *)customSlider
+               contentScrollItem:(NSArray *)contentArr;
+               
 ```
-YFTagItemConfigration block = ^UIButton *(UIButton *itemBtn, NSUInteger index){
-        if (index == 0) {  // 选中状态
-            [itemBtn setTitleColor:[UIColor colorWithRed:0.4 green:0.0 blue:1.0 alpha:0.3] forState:UIControlStateNormal];
-        }else {            // 默认状态
-            [itemBtn setTitleColor:[UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
-        }
-        itemBtn.titleLabel.font = [UIFont systemFontOfSize:15]; // 大小按缩放比例
-        return itemBtn;
-    };
-```
-2. 滑块类型: 自定义颜色高,宽度跟btn.titile宽度+参数<p></p>
-```
-/** slider宽度, 默认取title字符宽度, 这个值为基本上增加 1.0+sliderWidthScale */
-@property (nonatomic, assign) CGFloat sliderWidthScale;
-typedef NS_ENUM(NSUInteger, YFSliderType) {
-    YFSliderTypeNone,           // 没有
-    YFSliderTypeTop,            // 上面
-    YFSliderTypeMid,            // 中间
-    YFSliderTypeBottom,         // 下面
-    YFSliderTypeBottomAlone     // 下面独立
-};
-```
-3. 内容(UIViewcontroller, UIView)
+##License
+This project is under MIT License. See LICENSE file for more information.

@@ -113,7 +113,6 @@
  *  @param item  内容, UIView 或 UIViewController
  */
 - (void)addTagTitle:(NSString *)title contentItem:(id)item;
-
 /**
  *  增加在index, 会移动到新插入的位置
  */
@@ -123,7 +122,6 @@
  *  删除
  */
 - (void)removeContentAtIndex:(NSInteger)index;
-
 /**
  *  多删(不想枚举判断了(浪费),传字符串,负数自己负责,如果可以直接报错的限制方法,请issue我)
  */
@@ -133,7 +131,9 @@
  *  交换元素
  */
 - (void)exchangeAtIndex:(NSInteger)index1 withIndex:(NSInteger)index2;
-
+/** 
+ *切换之后的数组对比, 看网易新闻加的 
+ */
 - (void)updateTagArr:(NSMutableArray *)tagArr contentArr:(NSMutableArray *)contentArr;
 
 
