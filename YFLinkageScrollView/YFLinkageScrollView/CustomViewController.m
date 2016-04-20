@@ -43,7 +43,7 @@ static float a = 1.0;
 
     a += 0.01;
     if (a > 1.9) return;
-   // _btnTwo.transform = CGAffineTransformMakeScale(a, a);
+    _btnTwo.transform = CGAffineTransformMakeScale(a, a);
 }
 
 

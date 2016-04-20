@@ -11,10 +11,10 @@
 
 typedef NS_ENUM(NSUInteger, YFSliderType) {
     YFSliderTypeNone,           // 没有
-    YFSliderTypeTop,            // 上面
+    YFSliderTypeTop,            // 上面, 放在标签ScrollView
     YFSliderTypeMid,            // 中间
     YFSliderTypeBottom,         // 下面
-    YFSliderTypeBottomAlone     // 下面独立
+    YFSliderTypeBottomAlone     // 下面独立, 宽度和标签ScrollView一样的UIScrollView
 };
 
 

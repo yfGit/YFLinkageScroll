@@ -38,7 +38,7 @@
 @property (nonatomic, strong) UIView *customSlider;
 /** 自定义sliderFrame */
 @property (nonatomic, assign) CGRect customFrame;
-/** 滑块 */
+/** 滑块容器, 有必要的话之前拉.h, 用于控制最宽masksToBounds */
 @property (nonatomic, strong) YFSliderView *sliderView;
 /** 滑块类型 */
 @property (nonatomic, assign) YFSliderType sliderType;

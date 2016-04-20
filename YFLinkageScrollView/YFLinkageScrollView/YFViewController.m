@@ -63,9 +63,9 @@
 
     [self configUI];
                                                         
-//    [self configXib];
-//    [self configXibTwo];
-//    [self configXibThree];
+    [self configXib];
+    [self configXibTwo];
+    [self configXibThree];
 }
 
 - (void)setupData
@@ -115,7 +115,7 @@
 - (void)configXib
 {
     YFTagItemConfigration block = ^UIButton *(UIButton *itemBtn, NSUInteger index){
-        if (index == 0) {  // 选中状态
+        if (index == 0) {  // 选中状态, 注意全是 UIControlStateNormal
             [itemBtn setTitleColor:[UIColor colorWithRed:0.4 green:0.0 blue:1.0 alpha:0.3] forState:UIControlStateNormal];
         }else {            // 默认状态
             [itemBtn setTitleColor:[UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];

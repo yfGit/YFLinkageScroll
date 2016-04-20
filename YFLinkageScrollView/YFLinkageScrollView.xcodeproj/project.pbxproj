@@ -112,16 +112,16 @@
 		7918A8CB1CC62A0100229A25 /* YFView */ = {
 			isa = PBXGroup;
 			children = (
-				7918A8CC1CC62A0100229A25 /* UIColor+GetColor.h */,
-				7918A8CD1CC62A0100229A25 /* UIColor+GetColor.m */,
-				7918A8CE1CC62A0100229A25 /* YFContentScroll.h */,
-				7918A8CF1CC62A0100229A25 /* YFContentScroll.m */,
 				7918A8D01CC62A0100229A25 /* YFLinkageScrollView.h */,
 				7918A8D11CC62A0100229A25 /* YFLinkageScrollView.m */,
-				7918A8D21CC62A0100229A25 /* YFSliderView.h */,
-				7918A8D31CC62A0100229A25 /* YFSliderView.m */,
 				7918A8D41CC62A0100229A25 /* YFTagScroll.h */,
 				7918A8D51CC62A0100229A25 /* YFTagScroll.m */,
+				7918A8D21CC62A0100229A25 /* YFSliderView.h */,
+				7918A8D31CC62A0100229A25 /* YFSliderView.m */,
+				7918A8CE1CC62A0100229A25 /* YFContentScroll.h */,
+				7918A8CF1CC62A0100229A25 /* YFContentScroll.m */,
+				7918A8CC1CC62A0100229A25 /* UIColor+GetColor.h */,
+				7918A8CD1CC62A0100229A25 /* UIColor+GetColor.m */,
 			);
 			path = YFView;
 			sourceTree = "<group>";
