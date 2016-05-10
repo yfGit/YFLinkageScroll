@@ -45,19 +45,19 @@
 
     int dom = arc4random()%7;
     
-    [_mainView setCurrentIndex:dom animated:NO TagAnimated:NO];
-    [_one setCurrentIndex:dom animated:NO TagAnimated:NO];
-    [_two setCurrentIndex:dom animated:YES TagAnimated:NO];
-    [_three setCurrentIndex:dom animated:YES TagAnimated:NO];
+    [self.mainView setCurrentIndex:dom animated:NO TagAnimated:NO];
+    [self.one setCurrentIndex:dom animated:NO TagAnimated:NO];
+    [self.two setCurrentIndex:dom animated:YES TagAnimated:NO];
+    [self.three setCurrentIndex:dom animated:YES TagAnimated:NO];
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _isLoading = YES;
+    self.isLoading = YES;
     self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
 
-    _statusArr = [NSMutableArray arrayWithArray:@[@0,@0,@0,@0,@0,@0,@0]];
+    self.statusArr = [NSMutableArray arrayWithArray:@[@0,@0,@0,@0,@0,@0,@0]];
 
     [self setupData];
 
@@ -70,7 +70,7 @@
 
 - (void)setupData
 {
-    _tagArr = @[@"头  条", @"萌傻宠", @"美女的脸", @"上海夜景", @"海  外", @"轻松一刻",@"科技"];
+    self.tagArr = @[@"头  条", @"萌傻宠", @"美女的脸", @"上海夜景", @"海  外", @"轻松一刻",@"科技"];
 
     OneViewController *one = [[OneViewController alloc] init];
     TwoViewController *two = [[TwoViewController alloc] init];
@@ -80,7 +80,7 @@
     SixViewController *six = [[SixViewController alloc] init];
     SevenViewController *seven = [[SevenViewController alloc] init];
 
-    _ctrlArr = @[one, two, three, four, five, six, seven];
+    self.ctrlArr = @[one, two, three, four, five, six, seven];
 
 
     NSMutableArray *viewArr = [NSMutableArray array];
@@ -91,7 +91,7 @@
         [tb registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellId"];
         [viewArr addObject:tb];
     }
-    _tbViewArr = [NSArray arrayWithArray:viewArr];
+    self.tbViewArr = [NSArray arrayWithArray:viewArr];
 }
 
 
@@ -99,16 +99,16 @@
 {
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    _mainView = [[YFLinkageScrollView alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 160)];
-    [self.view addSubview:_mainView];
+    self.mainView = [[YFLinkageScrollView alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 160)];
+    [self.view addSubview:self.mainView];
 
-    [_mainView configWithScrolltagArray:_tagArr visibleCount:3.5 sliderType:YFSliderTypeMid contentScrollItem:_ctrlArr];
+    [self.mainView configWithScrolltagArray:self.tagArr visibleCount:3.5 sliderType:YFSliderTypeMid contentScrollItem:self.ctrlArr];
 
-    _mainView.sliderWidthScale = 0.6;
+    self.mainView.sliderWidthScale = 0.6;
 
     UILabel *tip = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
     tip.text = @"init, 居中, ViewControllers";
-    tip.center = _mainView.center;
+    tip.center = self.mainView.center;
     [self.view addSubview:tip];
 }
 
@@ -137,9 +137,9 @@
         [viewArr addObject:tb];
     }
 
-    [_one configWithScrolltagArray:_tagArr tagScrollEdgeInset:UIEdgeInsetsZero tagScale:1.1 configTagItemBlock:block visibleCount:5 sliderType:YFSliderTypeTop customSlider:sliderView contentScrollItem:_tbViewArr];
+    [self.one configWithScrolltagArray:self.tagArr tagScrollEdgeInset:UIEdgeInsetsZero tagScale:1.1 configTagItemBlock:block visibleCount:5 sliderType:YFSliderTypeTop customSlider:sliderView contentScrollItem:self.tbViewArr];
 
-    _one.isMoveToVisible = YES;
+    self.one.isMoveToVisible = YES;
 
 }
 
@@ -169,11 +169,11 @@
         [viewArr addObject:tb];
     }
 
-    [_two configWithScrolltagArray:_tagArr tagScrollEdgeInset:UIEdgeInsetsMake(10, 20, 20, 20) tagScale:1.2 configTagItemBlock:block visibleCount:3.5 sliderType:YFSliderTypeBottomAlone customSlider:sliderView contentScrollItem:viewArr];
-    _two.tagScroll.backgroundColor = [UIColor whiteColor];
+    [self.two configWithScrolltagArray:self.tagArr tagScrollEdgeInset:UIEdgeInsetsMake(10, 20, 20, 20) tagScale:1.2 configTagItemBlock:block visibleCount:3.5 sliderType:YFSliderTypeBottomAlone customSlider:sliderView contentScrollItem:viewArr];
+    self.two.tagScroll.backgroundColor = [UIColor whiteColor];
 
-    _two.isMoveToVisible = YES;
-    _two.sliderColor = [UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:0.3];
+    self.two.isMoveToVisible = YES;
+    self.two.sliderColor = [UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:0.3];
 }
 
 - (void)configXibThree
@@ -202,10 +202,10 @@
         [viewArr addObject:tb];
     }
 
-    _three.tagScroll.backgroundColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
+    self.three.tagScroll.backgroundColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
     NSMutableArray *arr = [NSMutableArray array];
     for (int i = 0; i < 7; i++) {
-        YFLinkageScrollView *view = [[YFLinkageScrollView alloc] initWithFrame:_three.bounds];
+        YFLinkageScrollView *view = [[YFLinkageScrollView alloc] initWithFrame:self.three.bounds];
 
         NSMutableArray *viewArr = [NSMutableArray array];
         for (int i = 0; i < 4; i++) {
@@ -217,13 +217,13 @@
         }
         [view configWithScrolltagArray:@[@"上山",@"打嘛呀打",@"老虎",@"拉拉拉"] visibleCount:3 sliderType:YFSliderTypeMid contentScrollItem:viewArr];
         view.delegate = self;
-//        view.ctScroll.scrollEnabled = NO;  // 效果: 滚动的是 _three
+//        view.ctScroll.scrollEnabled = NO;  // 效果: 滚动的是 self.three
         [arr addObject:view];
     }
 
-    [_three configWithScrolltagArray:_tagArr tagScrollEdgeInset:UIEdgeInsetsZero tagScale:1.2 configTagItemBlock:block visibleCount:4 sliderType:YFSliderTypeNone customSlider:sliderView contentScrollItem:arr];
-    _three.delegate = self;
-    _isLoading = NO;
+    [self.three configWithScrolltagArray:self.tagArr tagScrollEdgeInset:UIEdgeInsetsZero tagScale:1.2 configTagItemBlock:block visibleCount:4 sliderType:YFSliderTypeNone customSlider:sliderView contentScrollItem:arr];
+    self.three.delegate = self;
+    self.isLoading = NO;
 }
 
 
@@ -267,26 +267,26 @@
         return;
     }
 
-    if (_isLoading) {
+    if (self.isLoading) {
         return;
     }
 
     if ([item isKindOfClass:[YFLinkageScrollView class]]) {
         prefix = currentIndex;
         if (prefix != lastPrefix) {
-            suffix = [_statusArr[prefix] intValue];
+            suffix = [self.statusArr[prefix] intValue];
         }
     }else {
         suffix = currentIndex;
     }
-    [_statusArr removeObjectAtIndex:prefix];
-    [_statusArr insertObject:@(suffix) atIndex:prefix];
+    [self.statusArr removeObjectAtIndex:prefix];
+    [self.statusArr insertObject:@(suffix) atIndex:prefix];
     lastPrefix = prefix;
 
     NSLog(@"%ld - %ld 加载动画,刷新数据, ",(long)prefix, (long)suffix);
 
 
-//    UIViewController *vc = (UIViewController *)_ctrlArr[currentIndex];
+//    UIViewController *vc = (UIViewController *)self.ctrlArr[currentIndex];
 //    [vc load];
 }
 

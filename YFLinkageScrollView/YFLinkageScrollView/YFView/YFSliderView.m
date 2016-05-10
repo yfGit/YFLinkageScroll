@@ -47,46 +47,46 @@
         }
         
         if (customSlider) {
-            _slider = customSlider;
-            _slider.frame = customFrame;
-            CGRect rect = _slider.frame;
-            if (_slider.frame.size.width == 0) {
+            self.slider = customSlider;
+            self.slider.frame = customFrame;
+            CGRect rect = self.slider.frame;
+            if (self.slider.frame.size.width == 0) {
                 rect.size.width = containWidth;
-                _isCustomWidth = NO;
+                self.isCustomWidth = NO;
             }else {
-                _isCustomWidth = YES;
+                self.isCustomWidth = YES;
             }
-            _slider.frame = rect;
+            self.slider.frame = rect;
         }else {
-            _slider = [[UIView alloc] init];
+            self.slider = [[UIView alloc] init];
             if (type == YFSliderTypeMid) {
                 tagHeight = containHeight-10;
             }
-            _slider.frame = CGRectMake(0, 0, containWidth, tagHeight);
-            _slider.layer.cornerRadius = _slider.frame.size.height/2;
-            _slider.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:0.3];
+            self.slider.frame = CGRectMake(0, 0, containWidth, tagHeight);
+            self.slider.layer.cornerRadius = self.slider.frame.size.height/2;
+            self.slider.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:0.3];
         }
 
-        [self addSubview:_slider];
-        _slider.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+        [self addSubview:self.slider];
+        self.slider.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     }
     return self;
 }
 
 - (void)setSliderWidth:(CGFloat)sliderWidth
 {
-    CGPoint center = _slider.center;
+    CGPoint center = self.slider.center;
 
-    CGRect rect = _slider.frame;
+    CGRect rect = self.slider.frame;
     rect.size.width  = sliderWidth;
-    _slider.frame = rect;
+    self.slider.frame = rect;
 
-    _slider.center = center;
+    self.slider.center = center;
 }
 
 - (CGFloat)sliderWidth
 {
-    return _slider.frame.size.width;
+    return self.slider.frame.size.width;
 }
 
 - (void)dealloc

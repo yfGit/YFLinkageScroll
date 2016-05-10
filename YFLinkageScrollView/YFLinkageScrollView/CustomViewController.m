@@ -26,33 +26,33 @@ static float a = 1.0;
     [super viewDidLoad];
 
     a = 1.0;
-    _btn.titleLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.3];
-    _btn.titleLabel.adjustsFontSizeToFitWidth = YES;
-    _btnTwo.titleLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
-    _btnTwo.titleLabel.adjustsFontSizeToFitWidth = YES;
+    self.btn.titleLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.3];
+    self.btn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    self.btnTwo.titleLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
+    self.btnTwo.titleLabel.adjustsFontSizeToFitWidth = YES;
 
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(changeSize) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(changeSize) userInfo:nil repeats:YES];
 }
 
 - (void)changeSize
 {
-    CGFloat fontSize = _btn.titleLabel.font.pointSize;
-    _btn.titleLabel.font = [UIFont systemFontOfSize:fontSize+0.1];
+    CGFloat fontSize = self.btn.titleLabel.font.pointSize;
+    self.btn.titleLabel.font = [UIFont systemFontOfSize:fontSize+0.1];
 
-    _label.font = [UIFont systemFontOfSize:fontSize+0.1];
+    self.label.font = [UIFont systemFontOfSize:fontSize+0.1];
 
     a += 0.01;
     if (a > 1.9) return;
-    _btnTwo.transform = CGAffineTransformMakeScale(a, a);
+    self.btnTwo.transform = CGAffineTransformMakeScale(a, a);
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [_timer invalidate];
-    //_btnTwo.transform = CGAffineTransformIdentity;
-    _timer = nil;
+    [self.timer invalidate];
+    //self.btnTwo.transform = CGAffineTransformIdentity;
+    self.timer = nil;
 }
 
 - (void)dealloc

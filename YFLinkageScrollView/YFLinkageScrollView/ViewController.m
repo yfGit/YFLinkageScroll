@@ -44,21 +44,21 @@
     TwoViewController *two = [[TwoViewController alloc] init];
     ThreeViewController *three = [[ThreeViewController alloc] init];
 
-    _tagArr = [NSMutableArray arrayWithArray:@[@"头条", @"萌傻宠", @"美女的脸"]];
+    self.tagArr = [NSMutableArray arrayWithArray:@[@"头条", @"萌傻宠", @"美女的脸"]];
 
-    _viewCtrls = [NSMutableArray arrayWithArray:@[one, two, three]];
+    self.viewCtrls = [NSMutableArray arrayWithArray:@[one, two, three]];
 
-    [_yfScrollView configWithScrolltagArray:_tagArr visibleCount:3 sliderType:YFSliderTypeBottomAlone contentScrollItem:_viewCtrls];
-
-
+    [self.yfScrollView configWithScrolltagArray:self.tagArr visibleCount:3 sliderType:YFSliderTypeBottomAlone contentScrollItem:self.viewCtrls];
 
 
-    _yfScrollView.rotateVisibleCount = 5;
-    _yfScrollView.tagScroll.backgroundColor = [UIColor greenColor];
-//    _yfScrollView.isMoveToVisible = YES;
-    _yfScrollView.sliderWidthScale = .3;
-    _yfScrollView.delegate = self;
-    _yfScrollView.sliderColor = [UIColor whiteColor];
+
+
+    self.yfScrollView.rotateVisibleCount = 5;
+    self.yfScrollView.tagScroll.backgroundColor = [UIColor greenColor];
+//    self.yfScrollView.isMoveToVisible = YES;
+    self.yfScrollView.sliderWidthScale = .3;
+    self.yfScrollView.delegate = self;
+    self.yfScrollView.sliderColor = [UIColor whiteColor];
 }
 
 
@@ -68,20 +68,20 @@
 //    NSLog(@"随机数:%d",dom);
 
     static  int b = 5;
-    [_yfScrollView setCurrentIndex:dom animated:YES TagAnimated:NO];
+    [self.yfScrollView setCurrentIndex:dom animated:YES TagAnimated:NO];
     b = 6;
 }
 
 #pragma mark - CRUD
 
-// 调用之前_viewCtrls 先操作, CRUD方法会调用代理
+// 调用之前self.viewCtrls 先操作, CRUD方法会调用代理
 - (IBAction)add:(UIButton *)sender {
     static int a = 0;
 
     TwoViewController *two = [[TwoViewController alloc] init];
-    [_viewCtrls addObject:two];
-    [_tagArr addObject:[NSString stringWithFormat:@"New-%d",a]];
-    [_yfScrollView addTagTitle:[NSString stringWithFormat:@"New-%d",a] contentItem:two];
+    [self.viewCtrls addObject:two];
+    [self.tagArr addObject:[NSString stringWithFormat:@"New-%d",a]];
+    [self.yfScrollView addTagTitle:[NSString stringWithFormat:@"New-%d",a] contentItem:two];
     a++;
 }
 - (IBAction)addInsert:(UIButton *)sender {
@@ -94,39 +94,39 @@
     [five addSubview:label];
     label.backgroundColor = [UIColor cyanColor];
 
-    int idx = arc4random()%(_viewCtrls.count-1)+1;
-    [_tagArr insertObject:[NSString stringWithFormat:@"Insert-%d",b] atIndex:idx];
-    [_viewCtrls insertObject:five atIndex:idx]; // 要写在前面, 后面一条会调代理
-    [_yfScrollView addTagTitle:[NSString stringWithFormat:@"Insert-%d",b] contentItem:five atIndex:idx];
+    int idx = arc4random()%self.viewCtrls.count;
+    [self.tagArr insertObject:[NSString stringWithFormat:@"Insert-%d",b] atIndex:idx];
+    [self.viewCtrls insertObject:five atIndex:idx]; // 要写在前面, 后面一条会调代理
+    [self.yfScrollView addTagTitle:[NSString stringWithFormat:@"Insert-%d",b] contentItem:five atIndex:idx];
 
     b++;
 }
 
 
 - (IBAction)del:(UIButton *)sender {
-    if (_viewCtrls.count < 2) return;
+    if (self.viewCtrls.count < 2) return;
 
-    NSInteger idx = arc4random()%_viewCtrls.count;
-    [_viewCtrls removeObjectAtIndex:idx];
-    [_tagArr removeObjectAtIndex:idx];
-    _yfScrollView.animDuration = 0;     // 取消渐变
-    [_yfScrollView removeContentAtIndex:idx];
-    _yfScrollView.animDuration = 0.5;   // 全局属性恢复def 0.5
+    NSInteger idx = arc4random()%self.viewCtrls.count;
+    [self.viewCtrls removeObjectAtIndex:idx];
+    [self.tagArr removeObjectAtIndex:idx];
+    self.yfScrollView.animDuration = 0;     // 取消渐变
+    [self.yfScrollView removeContentAtIndex:idx];
+    self.yfScrollView.animDuration = 0.5;   // 全局属性恢复def 0.5
 }
 
 - (IBAction)multipleDel:(UIButton *)sender {
 
-    if (_viewCtrls.count < 4) return;
+    if (self.viewCtrls.count < 4) return;
 
-    NSInteger idx = arc4random()%_viewCtrls.count;
+    NSInteger idx = arc4random()%self.viewCtrls.count;
     NSInteger idx2;
     do {
-        idx2 = arc4random()%_viewCtrls.count;
+        idx2 = arc4random()%self.viewCtrls.count;
     } while (idx2 == idx);
 
     NSInteger idx3;
     do {
-        idx3 = arc4random()%_viewCtrls.count;
+        idx3 = arc4random()%self.viewCtrls.count;
     } while (idx3 == idx2 || idx3 == idx);
 
 
@@ -139,18 +139,18 @@
         [indexSet addIndex:index];
     }
 
-    [_viewCtrls removeObjectsAtIndexes:indexSet];
-    [_tagArr removeObjectsAtIndexes:indexSet];
+    [self.viewCtrls removeObjectsAtIndexes:indexSet];
+    [self.tagArr removeObjectsAtIndexes:indexSet];
 
-    [_yfScrollView removeContentAtIndexs:indexs];
+    [self.yfScrollView removeContentAtIndexs:indexs];
 }
 
 - (IBAction)change:(UIButton *)sender {
 
-    if (_viewCtrls.count < 3) return;
-    [_viewCtrls exchangeObjectAtIndex:0 withObjectAtIndex:1];
-    [_tagArr exchangeObjectAtIndex:0 withObjectAtIndex:1];
-    [_yfScrollView exchangeAtIndex:1 withIndex:2];
+    if (self.viewCtrls.count < 3) return;
+    [self.viewCtrls exchangeObjectAtIndex:0 withObjectAtIndex:1];
+    [self.tagArr exchangeObjectAtIndex:0 withObjectAtIndex:1];
+    [self.yfScrollView exchangeAtIndex:1 withIndex:2];
 }
 
 - (IBAction)updataSource:(UIButton *)sender {
@@ -161,19 +161,19 @@
     SixViewController *six = [[SixViewController alloc] init];
     SevenViewController *seven = [[SevenViewController alloc] init];
 
-//    [_tagArr removeAllObjects];
-    [_tagArr addObject:[NSString stringWithFormat:@"上海的风景-%d",num]];
-    [_tagArr addObject:[NSString stringWithFormat:@"海外-%d",num]];
-    [_tagArr addObject:[NSString stringWithFormat:@"轻松一刻-%d",num]];
-    [_tagArr addObject:[NSString stringWithFormat:@"科技-%d",num]];
+//    [self.tagArr removeAllObjects];
+    [self.tagArr addObject:[NSString stringWithFormat:@"上海的风景-%d",num]];
+    [self.tagArr addObject:[NSString stringWithFormat:@"海外-%d",num]];
+    [self.tagArr addObject:[NSString stringWithFormat:@"轻松一刻-%d",num]];
+    [self.tagArr addObject:[NSString stringWithFormat:@"科技-%d",num]];
 
-//    [_viewCtrls removeAllObjects];
-    [_viewCtrls addObject:four];
-    [_viewCtrls addObject:five];
-    [_viewCtrls addObject:six];
-    [_viewCtrls addObject:seven];
+//    [self.viewCtrls removeAllObjects];
+    [self.viewCtrls addObject:four];
+    [self.viewCtrls addObject:five];
+    [self.viewCtrls addObject:six];
+    [self.viewCtrls addObject:seven];
 
-    [_yfScrollView updateTagArr:_tagArr contentArr:_viewCtrls];
+    [self.yfScrollView updateTagArr:self.tagArr contentArr:self.viewCtrls];
 
     num++;
 }
@@ -194,7 +194,7 @@
 {
     NSLog(@"%ld",currentIndex);
     if ([item isKindOfClass:[UIViewController class]]) {
-        BasicViewController *vc = (BasicViewController *)_viewCtrls[currentIndex];
+        BasicViewController *vc = (BasicViewController *)self.viewCtrls[currentIndex];
         [vc load];
     }
 }

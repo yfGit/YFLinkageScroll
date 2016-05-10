@@ -23,14 +23,14 @@
 #pragma mark- Initial
 - (void)configItemArr:(NSArray *)itemArr
 {
-    _itemArr = [NSMutableArray arrayWithArray:itemArr];
+    self.itemArr = [NSMutableArray arrayWithArray:itemArr];
     
-    for (NSUInteger i = 0; i < _itemArr.count; i++) {
+    for (NSUInteger i = 0; i < self.itemArr.count; i++) {
 
         id item = itemArr[i];
         if ([item isKindOfClass:[UIView class]]) {
 
-            _isView = YES;
+            self.isView = YES;
             UIView  *itemView = (UIView *)item;
 
             [self addSubview:itemView];
@@ -45,13 +45,13 @@
 {
     [super willMoveToWindow:newWindow];
 
-    if ( _isView || !_itemArr ) return;
+    if ( self.isView || !self.itemArr ) return;
 
     UIViewController *viewCtrl = [self viewController:self];
     if ( viewCtrl ){
 
-        for (int i = 0; i < _itemArr.count; i++) {
-            id item = _itemArr[i];
+        for (int i = 0; i < self.itemArr.count; i++) {
+            id item = self.itemArr[i];
             if ([item isKindOfClass:[UIViewController class]]) {
                 UIViewController *itemVC = (UIViewController *)item;
                 [viewCtrl addChildViewController:itemVC];
@@ -93,7 +93,7 @@
                                 self.frame.size.width,
                                 self.frame.size.height);
     }
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 
 #pragma mark - CRUD
@@ -103,9 +103,9 @@
  */
 - (void)addContent:(id)item
 {
-    [_itemArr addObject:item];
+    [self.itemArr addObject:item];
 
-    CGRect frame = CGRectMake(self.frame.size.width*(_itemArr.count-1),
+    CGRect frame = CGRectMake(self.frame.size.width*(self.itemArr.count-1),
                               0,
                               self.frame.size.width,
                               self.frame.size.height);
@@ -126,12 +126,12 @@
             [itemVC didMoveToParentViewController:viewCtrl];
         }
     }
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 
 - (void)addContent:(id)item atIndex:(NSInteger)index
 {
-    [_itemArr insertObject:item atIndex:index];
+    [self.itemArr insertObject:item atIndex:index];
 
     for (NSInteger i = index; i < self.subviews.count; i++) {
         UIView *view = self.subviews[i];
@@ -161,7 +161,7 @@
             [itemVC didMoveToParentViewController:viewCtrl];
         }
     }
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 
 
@@ -170,7 +170,7 @@
  */
 - (void)removeItemAtIndex:(NSInteger)index
 {
-    [_itemArr removeObjectAtIndex:index];
+    [self.itemArr removeObjectAtIndex:index];
 
     // 删
     UIView *view = (UIView *)self.subviews[index];
@@ -190,7 +190,7 @@
                                 self.frame.size.width,
                                 self.frame.size.height);
     }
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 
 
@@ -202,7 +202,7 @@
         NSInteger idx = [indexs[i] unsignedIntegerValue];
         [indexSet addIndex:idx];
     }
-    [_itemArr removeObjectsAtIndexes:indexSet];
+    [self.itemArr removeObjectsAtIndexes:indexSet];
 
     NSInteger minimum = 99;
     indexs = [indexs sortedArrayUsingSelector:@selector(compare:)];
@@ -229,7 +229,7 @@
                                    self.frame.size.width,
                                    self.frame.size.height);
     }
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 
 
@@ -239,7 +239,7 @@
  */
 - (void)exchangeAtIndex:(NSInteger)index1 withIndex:(NSInteger)index2
 {
-    [_itemArr exchangeObjectAtIndex:index1 withObjectAtIndex:index2];
+    [self.itemArr exchangeObjectAtIndex:index1 withObjectAtIndex:index2];
 
     UIView *view1 = (UIView *)self.subviews[index1];
     UIView *view2 = (UIView *)self.subviews[index2];
@@ -257,8 +257,8 @@
  */
 - (void)updataContentItem:(NSMutableArray *)contentItem
 {
-    for (NSInteger i = _itemArr.count-1; i >= 0; i--) {  // 删除将不存在的
-        if (![contentItem containsObject:_itemArr[i]]) {
+    for (NSInteger i = self.itemArr.count-1; i >= 0; i--) {  // 删除将不存在的
+        if (![contentItem containsObject:self.itemArr[i]]) {
             UIView *view = self.subviews[i];
             [view removeFromSuperview];
             UIViewController *viewCtrl = [self viewController:view];
@@ -276,8 +276,8 @@
                                   0,
                                   self.frame.size.width,
                                   self.frame.size.height);
-        if ([_itemArr containsObject:contentItem[i]]) {
-            UIView *view = self.subviews[[_itemArr indexOfObject:contentItem[i]]];
+        if ([self.itemArr containsObject:contentItem[i]]) {
+            UIView *view = self.subviews[[self.itemArr indexOfObject:contentItem[i]]];
             view.frame = frame;
             [self insertSubview:view atIndex:i];
         }else {
@@ -298,8 +298,8 @@
             }
         }
     }
-    _itemArr = [NSMutableArray arrayWithArray:contentItem];
-    self.contentSize = CGSizeMake(self.frame.size.width*_itemArr.count, self.frame.size.height);
+    self.itemArr = [NSMutableArray arrayWithArray:contentItem];
+    self.contentSize = CGSizeMake(self.frame.size.width*self.itemArr.count, self.frame.size.height);
 }
 - (void)dealloc
 {
