@@ -1,5 +1,5 @@
 # YFLinkageScroll
-![CocoaPods Version](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)
+![CocoaPods Version](https://img.shields.io/badge/pod-v1.0.1-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS-red.svg)
 
@@ -26,7 +26,7 @@
 ##Usage
 **Xib加载 或代码 alloc.init 后** <p></p>
 **配置方法,属性或block, 事件代理(左右滑出界,停止滚动时的当前页)**<p></p>
-```pod 'YFLinkageScroll', '~> 1.0.0'```
+```pod 'YFLinkageScroll', '~> 1.0.1'```
 
 ```
 /**
