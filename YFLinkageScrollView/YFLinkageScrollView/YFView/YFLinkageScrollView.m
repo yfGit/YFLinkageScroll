@@ -112,7 +112,7 @@
 
 - (void)setRotateVisibleCount:(CGFloat)rotateVisibleCount
 {
-    _rotateVisibleCount = rotateVisibleCount;
+    _rotateVisibleCount     = rotateVisibleCount;
     self.tagHorVisibleCount = rotateVisibleCount;
     if (self.tagHorVisibleCount > self.tagArr.count)
         self.tagHorVisibleCount = self.tagArr.count;
@@ -121,7 +121,7 @@
 - (YFTagScroll *)tagScroll
 {
     if (!_tagScroll) {
-        _tagScroll = [[YFTagScroll alloc] init];
+        _tagScroll     = [[YFTagScroll alloc] init];
         self.lastFrame = CGRectZero;
     }
     return _tagScroll;
@@ -133,9 +133,9 @@
     if ([object isKindOfClass:[YFContentScroll class]]) {
         if ([keyPath isEqualToString:@"contentOffset"]) {
             NSNumber *value = change[@"new"];
-            CGPoint offset = value.CGPointValue;
-            float index = (offset.x / self.ctScroll.frame.size.width);
-            static int idx = 0;
+            CGPoint offset  = value.CGPointValue;
+            float index     = (offset.x / self.ctScroll.frame.size.width);
+            static int idx  = 0;
             if (index == (int)index && idx != (int)index) {
                 if ([self.delegate respondsToSelector:@selector(yfScrollViewChangeCurrentIndex:item:)]) {
                     [self.delegate yfScrollViewChangeCurrentIndex:self.currentIndex item:self.ctItemArr[self.currentIndex]];
@@ -162,11 +162,11 @@
         self.tagVisibleCount = self.tagHorVisibleCount;
     }
 
-    self.tagItemWidth               = rect.size.width / self.tagVisibleCount;
+    self.tagItemWidth           = rect.size.width / self.tagVisibleCount;
     self.tagScroll.tagItemWidth = self.tagItemWidth;
     self.tagScroll.currentIdx   = self.currentIndex;
     self.tagScroll.frame        = rect;
-    self.lastFrame                  = rect;
+    self.lastFrame              = rect;
     if (!UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsetsZero, self.tagEdge)) {
         [self changTagFrame:self.tagEdge];
     }
@@ -184,7 +184,7 @@
                                 self.frame.size.width,
                                 self.frame.size.height-CGRectGetMaxY(self.sliderScroll ? self.sliderScroll.frame : self.tagScroll.frame));
     self.ctScroll.frame = ctFrame;
-    self.isRotate = YES;
+    self.isRotate       = YES;
     [self setCurrentIndex:self.currentIndex animated:NO TagAnimated:NO];
 }
 
@@ -217,10 +217,10 @@
                     customSlider:(UIView *)customSlider
                contentScrollItem:(NSArray *)contentArr
 {
-    self.sliderColor = [UIColor clearColor];
-    self.tagEdge = tagEdge;
+    self.sliderColor      = [UIColor clearColor];
+    self.tagEdge          = tagEdge;
 
-    self.animDuration = 0.5;
+    self.animDuration     = 0.5;
     self.sliderWidthScale = 0.1;
 
     self.tagArr = [NSMutableArray arrayWithArray:tagArr];
@@ -231,15 +231,15 @@
     if (self.tagHorVisibleCount > self.tagArr.count)
         self.tagHorVisibleCount = self.tagArr.count;
 
-    self.tagItemWidth                   = self.tagScroll.frame.size.width / self.tagVisibleCount;
-    self.tagScroll.tagItemWidth     = self.tagItemWidth;
-    self.tagScale                       = tagScale;
-    self.tagScroll.tagScale         = tagScale;
+    self.tagItemWidth           = self.tagScroll.frame.size.width / self.tagVisibleCount;
+    self.tagScroll.tagItemWidth = self.tagItemWidth;
+    self.tagScale               = tagScale;
+    self.tagScroll.tagScale     = tagScale;
 
     [self configTagData]; // 取色
 
     NSArray *tagItemWidthArr = [self.tagScroll configTagArray:tagArr tagScale:tagScale configTagItemBlock:block];
-    self.tagItemWidthArr = [NSMutableArray arrayWithArray:tagItemWidthArr];
+    self.tagItemWidthArr     = [NSMutableArray arrayWithArray:tagItemWidthArr];
     [self addSubview:self.tagScroll];
 
     [self configNormal];    // 默认
@@ -259,18 +259,22 @@
 #pragma mark - **************************** setup *****************************
 - (void)changTagFrame:(UIEdgeInsets)tagScrollEdge
 {
-    CGRect rect = self.tagScroll.frame;
-    rect.origin.x += ABS(tagScrollEdge.left);
-    rect.origin.y += ABS(tagScrollEdge.top);
-    rect.size.width -= ABS(tagScrollEdge.left)+ABS(tagScrollEdge.right);
+    CGRect rect      = self.tagScroll.frame;
+    rect.origin.x    += ABS(tagScrollEdge.left);
+    rect.origin.y    += ABS(tagScrollEdge.top);
+    rect.size.width  -= ABS(tagScrollEdge.left)+ABS(tagScrollEdge.right);
     rect.size.height += tagScrollEdge.bottom;
-    self.tagScroll.frame = rect;
+
+    // 对应的width也要改变(contentSize, slider位置)
+    self.tagScroll.tagItemWidth = rect.size.width / self.tagVisibleCount;
+    self.tagItemWidth           = rect.size.width / self.tagVisibleCount;
+    self.tagScroll.frame        = rect;
 }
 
 - (void)configNormal
 {
     self.tagScrollAnim = YES;
-    self.ctScrollAnim = YES;
+    self.ctScrollAnim  = YES;
 }
 
 - (void)configTagData
@@ -309,11 +313,11 @@
                                                                        self.tagScroll.frame.size.width,
                                                                        customSlider ? customSlider.frame.size.height : 4)];
         [self addSubview:self.sliderScroll];
-        self.sliderScroll.contentSize = self.tagScroll.contentSize;
-        self.sliderScroll.showsVerticalScrollIndicator = NO;
-        self.sliderScroll.showsHorizontalScrollIndicator = NO;
-        self.sliderScroll.userInteractionEnabled = NO;
+        self.sliderScroll.contentSize     = self.tagScroll.contentSize;
         self.sliderScroll.backgroundColor = self.sliderColor;
+        self.sliderScroll.showsVerticalScrollIndicator   = NO;
+        self.sliderScroll.showsHorizontalScrollIndicator = NO;
+        self.sliderScroll.userInteractionEnabled         = NO;
         [self.sliderScroll addSubview:self.sliderView];
 
     }else {
@@ -344,11 +348,11 @@
     self.tagScroll.delegate = self;
     self.tagScroll.tagSelectBlock = ^(UIButton *btn, NSInteger idx) {
 
-        UIButton *lastBtn = (UIButton *)[weakSelf viewWithTag:weakSelf.currentIndex+kTagPadding];
+        UIButton *lastBtn     = (UIButton *)[weakSelf viewWithTag:weakSelf.currentIndex+kTagPadding];
 
         weakSelf.currentIndex = (int)(btn.tag-kTagPadding);
 
-        weakSelf.lastPoint = CGPointMake(weakSelf.currentIndex*weakSelf.ctScroll.frame.size.width, 0);
+        weakSelf.lastPoint    = CGPointMake(weakSelf.currentIndex*weakSelf.ctScroll.frame.size.width, 0);
 
         [UIView animateWithDuration:weakSelf.animDuration animations:^{
             if ( !weakSelf.isCustomWidth && weakSelf.sliderView) {
@@ -528,7 +532,7 @@
 
     NSString *str = self.tagArr[self.currentIndex];
 
-    self.tagArr = [NSMutableArray arrayWithArray:tagArr];
+    self.tagArr    = [NSMutableArray arrayWithArray:tagArr];
     self.ctItemArr = [NSMutableArray arrayWithArray:contentArr];
 
     self.tagItemWidthArr = [self.tagScroll updataTagArr:tagArr];
@@ -662,7 +666,7 @@
 
     if (self.isJump) return;
 
-    self.ctScrollAnim = animated;
+    self.ctScrollAnim  = animated;
     self.tagScrollAnim = tagAnimated;
 
     UIButton *btn = [self viewWithTag:self.currentIndex+kTagPadding];
@@ -692,7 +696,7 @@
     }
     if ((!animated && !tagAnimated) || !animated) {
         self.moveCount = 1;
-        self.isJump = NO;
+        self.isJump    = NO;
     }
     self.lastPoint = CGPointMake(self.currentIndex*self.ctScroll.frame.size.width, 0);
 
@@ -778,7 +782,6 @@
         [self.ctScroll removeObserver:self forKeyPath:@"contentOffset"];
         self.ctScroll = nil;
     }
-    NSLog(@"%s",__func__);
 }
 
 @end

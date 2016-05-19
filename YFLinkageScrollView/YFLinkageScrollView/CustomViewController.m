@@ -57,7 +57,7 @@ static float a = 1.0;
 
 - (void)dealloc
 {
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 }
 
 @end

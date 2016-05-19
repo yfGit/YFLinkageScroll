@@ -30,7 +30,7 @@ static int count = 0;
 }
 - (void)dealloc
 {
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
