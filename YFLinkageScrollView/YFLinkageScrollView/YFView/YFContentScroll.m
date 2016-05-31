@@ -14,7 +14,6 @@
 @interface YFContentScroll ()<UIScrollViewDelegate>
 {}
 @property (nonatomic, strong) NSMutableArray *itemArr;
-@property (nonatomic, assign) BOOL isView;
 
 @end
 
@@ -24,48 +23,27 @@
 - (void)configItemArr:(NSArray *)itemArr
 {
     self.itemArr = [NSMutableArray arrayWithArray:itemArr];
-    
+    UIViewController *viewCtrl = [self viewController:self];
     for (NSUInteger i = 0; i < self.itemArr.count; i++) {
 
         id item = itemArr[i];
         if ([item isKindOfClass:[UIView class]]) {
 
-            self.isView = YES;
             UIView  *itemView = (UIView *)item;
-
             [self addSubview:itemView];
+        }else if ([item isKindOfClass:[UIViewController class]]) {
+
+            UIViewController *itemVC = (UIViewController *)item;
+            [viewCtrl addChildViewController:itemVC];
+
+            [itemVC willMoveToParentViewController:viewCtrl];
+            [self addSubview:itemVC.view];
+            [itemVC didMoveToParentViewController:viewCtrl];
         }
     }
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator   = NO;
     self.pagingEnabled = YES;
-}
-
-- (void)willMoveToWindow:(UIWindow *)newWindow
-{
-    [super willMoveToWindow:newWindow];
-
-    if ( self.isView || !self.itemArr ) return;
-
-    UIViewController *viewCtrl = [self viewController:self];
-    if ( viewCtrl ){
-
-        for (int i = 0; i < self.itemArr.count; i++) {
-            id item = self.itemArr[i];
-            if ([item isKindOfClass:[UIViewController class]]) {
-                UIViewController *itemVC = (UIViewController *)item;
-                [viewCtrl addChildViewController:itemVC];
-
-                [itemVC willMoveToParentViewController:viewCtrl];
-                [self addSubview:itemVC.view];
-                [itemVC didMoveToParentViewController:viewCtrl];
-
-            }
-        }
-        self.showsHorizontalScrollIndicator = NO;
-        self.showsVerticalScrollIndicator   = NO;
-        self.pagingEnabled = YES;
-    }
 }
 
 #pragma mark- Method

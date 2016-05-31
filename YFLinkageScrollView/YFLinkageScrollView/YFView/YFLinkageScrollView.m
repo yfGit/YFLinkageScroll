@@ -105,7 +105,7 @@
 - (void)setDelegate:(id<YFLinkageScrollViewDelegate>)delegate
 {
     _delegate = delegate;
-    if ([self.delegate respondsToSelector:@selector(yfScrollViewChangeCurrentIndex:item:)]) {
+    if ([self.delegate respondsToSelector:@selector(yfScrollViewChangeCurrentIndex:item:)] && self.ctItemArr.count>0) {
         [self.delegate yfScrollViewChangeCurrentIndex:0 item:self.ctItemArr[0]];
     }
 }
@@ -334,10 +334,10 @@
     if (self.ctScroll || self.tagArr.count != itemArr.count) return;
 
     self.ctScroll = [[YFContentScroll alloc] init];
+    [self addSubview:self.ctScroll];
+    
     [self.ctScroll configItemArr:itemArr];
     self.ctScroll.delegate = self;
-
-    [self addSubview:self.ctScroll];
     [self.ctScroll addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
 
